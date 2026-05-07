@@ -1,0 +1,22 @@
+/* ================= COLORS ================= */
+
+/* Root variables (global) */
+:root {
+
+    /* Background */
+    --bg-primary: #FFFFFF;
+
+    /* Text */
+    --text-primary: #000101;
+    --text-secondary: #555555;
+
+    /* Accent (main brand color) */
+    --accent-primary: #D7261C;
+
+    /* Accent (hover / darker shade) */
+    --accent-secondary: #b91f17;
+
+    /* Borders / subtle UI */
+    --border-light: #e5e5e5;
+
+}

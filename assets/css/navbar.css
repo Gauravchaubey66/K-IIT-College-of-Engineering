@@ -1,0 +1,73 @@
+/* ================= NAVBAR ================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+/* Logo */
+.logo img {
+    height: 70px;
+}
+
+/* Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000101;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #D7261C;
+}
+
+/* Apply Button */
+.apply-btn {
+    background-color: #D7261C;
+    color: #FFFFFF !important;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+/* Toggle Button */
+.menu-toggle {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 15px 0;
+    }
+}
