@@ -55,82 +55,84 @@
     <!-- HEADER & NAVIGATION -->
     <header>
         <div class="header-container">
-
             <!-- Logo -->
             <div class="logo-section">
                 <img src="assets/images/logo.png" alt="KIIT College of Engineering" class="logo-img">
+                <div class="company-name">KIIT</div>
             </div>
 
             <!-- Mobile Toggle -->
             <button class="nav-toggle" aria-label="Toggle navigation">
-                ☰
+                <i class="fas fa-bars"></i>
             </button>
 
             <!-- Navbar -->
             <nav class="nav-menu">
-
                 <a href="#home" class="nav-link active">Home</a>
-
                 <a href="#about" class="nav-link">About Us</a>
-
                 <a href="#academics" class="nav-link">Academics</a>
-
                 <a href="#facilities" class="nav-link">Facilities</a>
-
                 <a href="#awards" class="nav-link">Awards</a>
-
-                <a href="#apply" class="nav-link apply-btn">Apply</a>
-
                 <a href="#contact" class="nav-link">Contact Us</a>
-
             </nav>
-
         </div>
     </header>
 
-    <div id="home" class="page active">
-        <section class="hero" id="home">
+    <!-- MARQUEE BANNER -->
+    <div class="marquee-banner">
+        <div class="marquee-content">
+            <span class="marquee-text">🎓 Connect with us for admission related queries</span>
+            <span class="marquee-text">📧 Email: <a href="mailto:info@kiit.ac.in">info@kiit.ac.in</a></span>
+            <span class="marquee-text">🎓 Connect with us for admission related queries</span>
+            <span class="marquee-text">📧 Email: <a href="mailto:info@kiit.ac.in">info@kiit.ac.in</a></span>
+        </div>
+    </div>
 
-            <div class="hero-container">
-
-                <!-- Left Content -->
-                <div class="hero-content">
-
-                    <h1>
-                        Empowering Future-Ready Engineers & Professionals
-                    </h1>
-
-                    <p>
-                        Welcome to KIIT College of Engineering, Gurugram. Established in 2006, the institution is
-                        committed to academic excellence, innovation, and holistic student development. Approved by
-                        AICTE and affiliated with Gurugram University, KIIT provides modern infrastructure,
-                        industry-oriented learning, and strong career opportunities for professionals.
-                    </p>
-
-                    <div class="hero-buttons">
-
-                        <a href="#academics" class="btn btn-secondary">
-                            Explore Programs
-                        </a>
-
-                        <a href="#apply" class="btn btn-secondary">
-                            Apply Now
-                        </a>
-
-                    </div>
-
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <!-- Left Content -->
+            <div class="hero-content">
+                <h1>Empowering Future-Ready Engineers & Professionals</h1>
+                <p>Welcome to KIIT College of Engineering, Gurugram. Established in 2006, the institution is committed to academic excellence, innovation, and holistic student development. Approved by AICTE and affiliated with Gurugram University, KIIT provides modern infrastructure, industry-oriented learning, and strong career opportunities.</p>
+                <div class="hero-buttons">
+                    <a href="#academics" class="btn btn-secondary">Explore Programs</a>
+                    <a href="#apply" class="btn btn-secondary">Apply Now</a>
                 </div>
-
-                <!-- Right Image -->
-                <div class="hero-image">
-
-                    <img src="assets/images/all-img/campus-image-1.png" alt="KIIT College Campus">
-
-                </div>
-
             </div>
 
-        </section>
+            <!-- Carousel -->
+            <div class="hero-carousel">
+                <div class="carousel-wrapper">
+                    <div class="carousel-container" id="carouselContainer">
+                        <div class="carousel-slide">
+                            <img src="assets/images/all-img/campus-image-1.png" alt="KIIT College Campus">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="assets/images/all-img/campus-image-2.png" alt="KIIT Library">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="assets/images/all-img/medical.jpeg" alt="KIIT Laboratories">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="assets/images/all-img/Smart-Class-Room1-min.jpg" alt="KIIT Facilities">
+                        </div>
+                    </div>
+
+                    <!-- Carousel Controls -->
+                    <div class="carousel-controls" id="carouselDots"></div>
+
+                    <!-- Carousel Arrows -->
+                    <button class="carousel-arrow prev" id="prevBtn" aria-label="Previous slide">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-arrow next" id="nextBtn" aria-label="Next slide">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
         <!-- =========================
