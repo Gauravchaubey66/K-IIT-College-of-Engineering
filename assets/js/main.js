@@ -43,3 +43,65 @@ window.addEventListener("scroll", () => {
   header.classList.toggle("sticky", window.scrollY > 50);
 
 });
+
+/* =========================
+   GENERIC VIDEO MODAL
+========================= */
+
+const videoTriggers = document.querySelectorAll(".video-trigger");
+
+const videoModal = document.getElementById("videoModal");
+
+const popupVideo = document.getElementById("popupVideo");
+
+const closeVideo = document.getElementById("closeVideo");
+
+
+// Open Video
+
+videoTriggers.forEach(trigger => {
+
+  trigger.addEventListener("click", () => {
+
+    const videoSrc = trigger.getAttribute("data-video");
+
+    popupVideo.src = videoSrc;
+
+    videoModal.classList.add("active");
+
+    popupVideo.play();
+
+  });
+
+});
+
+
+// Close Function
+
+function closeVideoModal() {
+
+  videoModal.classList.remove("active");
+
+  popupVideo.pause();
+
+  popupVideo.currentTime = 0;
+
+}
+
+
+// Close Button
+
+closeVideo.addEventListener("click", closeVideoModal);
+
+
+// Close Outside Click
+
+videoModal.addEventListener("click", (e) => {
+
+  if (e.target.classList.contains("video-overlay")) {
+
+    closeVideoModal();
+
+  }
+
+});
